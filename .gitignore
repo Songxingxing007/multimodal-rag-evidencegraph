@@ -1,0 +1,52 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+credentials/
+
+# Python environments and caches
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.py[cod]
+.uv-cache/
+.uv-python/
+
+# JavaScript dependencies and build output
+**/node_modules/
+**/.pnpm-store/
+.pnpm-store/
+**/dist/
+**/.vite/
+*.tsbuildinfo
+
+# Local data, uploaded documents and generated outputs
+backend/data/
+web-app/uploads/
+web-app/runs/
+**/output/
+**/outputs/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.zip
+*.pdf
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Accidental shell output
+$null
+

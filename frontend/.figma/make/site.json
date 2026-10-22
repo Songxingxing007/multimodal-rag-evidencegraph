@@ -1,0 +1,10 @@
+{
+  "description": "Enables users to create detailed product prototypes from PRD documents, streamlining design and development for product teams and stakeholders.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

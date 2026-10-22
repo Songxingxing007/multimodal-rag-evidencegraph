@@ -1,0 +1,32 @@
+[project]
+name = "evidencegraph-backend"
+version = "1.0.0"
+description = "Independent GraphRAG backend service"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.34,<1",
+  "pydantic-settings>=2.7,<3",
+  "python-multipart>=0.0.20,<1",
+  "httpx>=0.28,<1",
+  "pypdf>=5.1,<7",
+  "python-dotenv>=1.0,<2",
+  "openai>=1.60,<3",
+  "langchain-openai>=0.3,<2",
+  "langextract>=1.7.1,<2",
+  "reportlab>=4.2,<6",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<10",
+  "pytest-asyncio>=0.25,<2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.uv]
+package = false
+
